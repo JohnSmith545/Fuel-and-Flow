@@ -1,0 +1,4 @@
+﻿
+> web@0.0.0 test:e2e C:\Users\Reena\Documents\Projects\Fitness-App\pnpm-mono-repo-template\apps\web
+> playwright test
+

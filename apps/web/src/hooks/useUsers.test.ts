@@ -1,3 +1,7 @@
+// This is the useUsers hook.
+// It is used to get the user profile from the database.
+// It is used in the App.tsx file.
+
 import { describe, it, expect, vi } from 'vitest'
 import { renderHook } from '@testing-library/react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'

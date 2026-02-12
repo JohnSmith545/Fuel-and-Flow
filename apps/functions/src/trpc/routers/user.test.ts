@@ -3,7 +3,13 @@ import { appRouter } from '../router'
 import { createCallerFactory } from '../trpc'
 
 const createCaller = createCallerFactory(appRouter)
-const caller = createCaller({})
+const caller = createCaller({
+  user: {
+    uid: 'test-uid',
+    email: 'test@example.com',
+  },
+})
+const unauthenticatedCaller = createCaller({ user: null })
 
 describe('userRouter', () => {
   describe('create', () => {
@@ -23,6 +29,15 @@ describe('userRouter', () => {
       })
       expect(result.id).toBe('dummy-id')
     })
+
+    it('rejects unauthenticated caller with UNAUTHORIZED', async () => {
+      await expect(
+        unauthenticatedCaller.user.create({
+          email: 'test@example.com',
+          name: 'Test User',
+        })
+      ).rejects.toMatchObject({ code: 'UNAUTHORIZED' })
+    })
   })
 
   describe('getById', () => {
@@ -37,6 +52,12 @@ describe('userRouter', () => {
       expect(result.email).toBe('test@example.com')
       expect(result.name).toBe('Test User')
     })
+
+    it('rejects unauthenticated caller with UNAUTHORIZED', async () => {
+      await expect(
+        unauthenticatedCaller.user.getById('user-123')
+      ).rejects.toMatchObject({ code: 'UNAUTHORIZED' })
+    })
   })
 
   describe('list', () => {
@@ -44,6 +65,11 @@ describe('userRouter', () => {
       const result = await caller.user.list()
       expect(Array.isArray(result)).toBe(true)
       expect(result.length).toBeGreaterThan(0)
+    })
+
+    it('allows unauthenticated access (public procedure)', async () => {
+      const result = await unauthenticatedCaller.user.list()
+      expect(Array.isArray(result)).toBe(true)
     })
   })
 })

@@ -1,0 +1,27 @@
+rules_version='2'
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      // Allow users to read/create/delete their own profile
+      allow read, create, delete: if request.auth != null && request.auth.uid == userId;
+      
+      // Allow update if IT IS NOT a role change, OR if the user is already an admin, OR if it's the specific Dev Admin
+      allow update: if request.auth != null && request.auth.uid == userId 
+                    && (
+                      request.auth.uid == '0bCWXroxotWC2LGRlgfiJFEkQFy2'
+                      || !request.resource.data.diff(resource.data).affectedKeys().hasAny(['role'])
+                    );
+
+      match /meal_logs/{logId} {
+        // Allow full access to own meal logs
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /custom_meals/{mealId} {
+        // Allow full access to own custom meals
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+  }
+}

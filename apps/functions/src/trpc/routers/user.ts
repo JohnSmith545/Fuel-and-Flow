@@ -1,9 +1,9 @@
 import { z } from 'zod'
-import { router, publicProcedure } from '../trpc'
+import { router, publicProcedure, protectedProcedure } from '../trpc'
 import { CreateUserSchema, UserSchema } from '@repo/shared'
 
 export const userRouter = router({
-  create: publicProcedure
+  create: protectedProcedure
     .input(CreateUserSchema)
     .output(UserSchema)
     .mutation(({ input }) => ({
@@ -12,7 +12,7 @@ export const userRouter = router({
       name: input.name,
     })),
 
-  getById: publicProcedure
+  getById: protectedProcedure
     .input(z.string())
     .output(UserSchema)
     .query(({ input }) => ({

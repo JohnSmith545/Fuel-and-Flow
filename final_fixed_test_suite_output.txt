@@ -1,0 +1,1152 @@
+﻿
+> web@0.0.0 test C:\Users\Reena\Documents\Projects\Fitness-App\pnpm-mono-repo-template\apps\web
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/Reena/Documents/Projects/Fitness-App/pnpm-mono-repo-template/apps/web[39m
+
+ [32mΓ£ô[39m src/hooks/useUsers.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 42[2mms[22m[39m
+ [32mΓ£ô[39m src/components/ProfileSettings.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 374[2mms[22m[39m
+node.exe : [90mstderr[2m 
+| src/components/FoodLogger
+.test.tsx[2m > 
+[22m[2mFoodLogger 
+Component[2m > [22m[2mIn
+itialization[2m > 
+[22m[2mrenders search 
+bar and default sections
+At C:\Users\Reena\AppData\R
+oaming\npm\pnpm.ps1:24 
+char:5
++     & "node$exe"  "$based
+ir/node_modules/pnpm/bin/pn
+pm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([9  
+  0mstderr[2m...efault    
+ sections:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > [22m[2mIn
+itialization[2m > 
+[22m[2mloads and 
+displays custom meals from 
+firestore
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+ [32mΓ£ô[39m src/tests/LoggingFlow.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[90m 239[2mms[22m[39m
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > [22m[2mIn
+itialization[2m > 
+[22m[2mhighlights 
+recommended foods based on 
+profile goal
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mSearch 
+Functionality[2m > 
+[22m[2mfilters results 
+when typing
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+ [32mΓ£ô[39m src/components/DailyFuel.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[33m 420[2mms[22m[39m
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mSearch 
+Functionality[2m > 
+[22m[2mshows "No foods 
+found" for invalid search
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mInteractions[2m 
+> [22m[2mcalls onAddFood 
+when clicking a food item
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mInteractions[2m 
+> [22m[2mopens create 
+meal modal when clicking 
+"Create Custom Meal" 
+(Gold/Premium)
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mInteractions[2m 
+> [22m[2mshows premium 
+gate when clicking "Create 
+Custom Meal" as Free user
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mInteractions[2m 
+> [22m[2msubmits a new 
+custom meal
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+ [32mΓ£ô[39m src/components/FoodLogger.test.tsx [2m([22m[2m9 tests[22m[2m)[22m[33m 707[2mms[22m[39m
+ [31mΓ¥»[39m src/App.test.tsx [2m([22m[2m1 test[22m[2m | [22m[31m1 failed[39m[2m)[22m[90m 137[2mms[22m[39m
+[31m   [31m├ù[31m App[2m > [22mrenders without crashing[90m 90[2mms[22m[31m[39m
+[31m     ΓåÆ Found multiple elements with the text: /Dashboard/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<span[31m
+  [33mclass[31m=[32m"material-icons-round"[31m
+[36m>[31m
+  [0mdashboard[0m
+[36m</span>[31m
+
+Ignored nodes: comments, script, style
+[36m<span[31m
+  [33mclass[31m=[32m"hidden lg:flex items-center gap-2 font-medium"[31m
+[36m>[31m
+  [0mDashboard[0m
+[36m</span>[31m
+
+Ignored nodes: comments, script, style
+[36m<span[31m
+  [33mclass[31m=[32m"material-icons-round text-2xl"[31m
+[36m>[31m
+  [0mdashboard[0m
+[36m</span>[31m
+
+Ignored nodes: comments, script, style
+[36m<h1[31m
+  [33mclass[31m=[32m"text-xl font-bold text-slate-900 dark:text-white self-start xs:self-auto"[31m
+[36m>[31m
+  [0mDashboard[0m
+[36m</h1>[31m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div>[31m
+      [36m<div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"flex flex-col md:flex-row bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen"[31m
+        [36m>[31m
+          [36m<aside[31m
+            [33mclass[31m=[32m"hidden md:flex w-20 lg:w-64 border-r border-primary/10 bg-white/50 dark:bg-background-dark/50 flex-col h-screen sticky top-0"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 flex items-center gap-3"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"material-icons-round"[31m
+                [36m>[31m
+                  [0mbolt[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<span[31m
+                [33mclass[31m=[32m"hidden lg:block font-bold text-xl tracking-tight uppercase italic"[31m
+              [36m>[31m
+                [0mFuel&Flow[0m
+              [36m</span>[31m
+            [36m</div>[31m
+            [36m<nav[31m
+              [33mclass[31m=[32m"flex-1 px-4 space-y-2 mt-4"[31m
+            [36m>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full flex items-center gap-4 p-3 rounded-lg transition-all relative bg-primary text-white shadow-lg shadow-primary/20"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"material-icons-round"[31m
+                [36m>[31m
+                  [0mdashboard[0m
+                [36m</span>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"hidden lg:flex items-center gap-2 font-medium"[31m
+                [36m>[31m
+                  [0mDashboard[0m
+                [36m</span>[31m
+              [36m</button>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full flex items-center gap-4 p-3 rounded-lg transition-all relative text-slate-500 dark:text-slate-400 hover:bg-primary/10 hover:text-primary"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"material-icons-round"[31m
+                [36m>[31m
+                  [0mrestaurant[0m
+                [36m</span>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"hidden lg:flex items-center gap-2 font-medium"[31m
+                [36m>[31m
+                  [0mNutrition[0m
+                [36m</span>[31m
+              [36m</button>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full flex items-center gap-4 p-3 rounded-lg transition-all relative text-slate-500 dark:text-slate-400 hover:bg-primary/10 hover:text-primary"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"material-icons-round"[31m
+                [36m>[31m
+                  [0minsights[0m
+                [36m</span>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"hidden lg:flex items-center gap-2 font-medium"[31m
+                [36m>[31m
+                  [0mAnalytics[0m
+                [36m</span>[31m
+              [36m</button>[31m
+            [36m</nav>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-4 border-t border-primary/10"[31m
+            [36m>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full flex items-center gap-4 p-3 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-primary/10 hover:text-primary transition-all"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"material-icons-round"[31m
+                [36m>[31m
+                  [0msettings[0m
+                [36m</span>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"hidden lg:block font-medium"[31m
+                [36m>[31m
+                  [0mSettings[0m
+                [36m</span>[31m
+              [36m</button>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"mt-4 flex items-center gap-3 p-2"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"w-10 h-10 rounded-full bg-slate-200 overflow-hidden"[31m
+                [36m>[31m
+                  [36m<img[31m
+                    [33malt[31m=[32m"User Avatar"[31m
+                    [33mclass[31m=[32m"w-full h-full object-cover"[31m
+                    [33msrc[31m=[32m"https://lh3.googleusercontent.com/aida-public/AB6AXuBYCKTG15lGtEJLOk3zEO7cgl5sEQ_uB3sEncpJrzGW-y8uEDw2_PeuOOhoUhNLEQfNsbqwKcYj9f06pwq6scd_yLZUqdg7hMUdSmWUHzYv2cOJqSloI76Uy1Q87Tbc9Vgq1NHWFi052FgWDaI96eo0as9QIfz8u9v_5tf9YBPmM3-EOnYrHeQmOHt95Ey1xZsfw719uJ-1j3zO9FD5NXS3aY8DWcuu5ZqoVkmm-2uJCUvo8Tip_4impgHASUmR_qn7OWU0uJ7Z1Q"[31m
+                  [36m/>[31m
+                [36m</div>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"hidden lg:block overflow-hidden text-left"[31m
+                [36m>[31m
+                  [36m<p[31m
+                    [33mclass[31m=[32m"text-sm font-semibold truncate"[31m
+                  [36m>[31m
+                    [0mtest@example.com[0m
+                  [36m</p>[31m
+                  [36m<p[31m
+                    [33mclass[31m=[32m"text-xs text-slate-500 truncate"[31m
+                  [36m>[31m
+                    [0mUser[0m
+                  [36m</p>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+            [36m</div>[31m
+          [36m</aside>[31m
+          [36m<nav[31m
+            [33mclass[31m=[32m"md:hidden fixed bottom-0 left-0 w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 z-50 px-6 py-3 grid grid-cols-4 pb-safe justify-items-center"[31m
+          [36m>[31m
+            [36m<button[31m
+              [33mclass[31m=[32m"w-full flex flex-col items-center gap-1 transition-all relative text-primary"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"p-1.5 rounded-xl transition-all relative bg-primary/10"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"material-icons-round text-2xl"[31m
+                [36m>[31m
+                  [0mdashboard[0m
+                [36m</span>[31m
+              [36m</div>[31m
+            [36m</button>[31m
+            [36m<button[31m
+              [33mclass[31m=[32m"w-full flex flex-col items-center gap-1 transition-all relative text-slate-400 hover:text-slate-600 dark:hover:text-slate-300"[31m
+            [36m>[31m
+              [36m<div[31m
+            ...[39m
+
+[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+[1m[7m Failed Tests 1 [27
+m[22mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m 
+src/App.test.tsx[2m > 
+[22mApp[2m > 
+[22mrenders without 
+crashing
+[31m[1mTestingLibraryElem
+entError[22m[39m: Found 
+multiple elements with the 
+text: /Dashboard/i
+
+Here are the matching 
+elements:
+
+Ignored nodes: comments, 
+script, style
+[36m<span[39m
+  [33mclass[39m=[32m"mat
+erial-icons-round"[39m
+[36m>[39m
+  [0mdashboard[0m
+[36m</span>[39m
+
+Ignored nodes: comments, 
+script, style
+[36m<span[39m
+  [33mclass[39m=[32m"hid
+den lg:flex items-center 
+gap-2 font-medium"[39m
+[36m>[39m
+  [0mDashboard[0m
+[36m</span>[39m
+
+Ignored nodes: comments, 
+script, style
+[36m<span[39m
+  [33mclass[39m=[32m"mat
+erial-icons-round 
+text-2xl"[39m
+[36m>[39m
+  [0mdashboard[0m
+[36m</span>[39m
+
+Ignored nodes: comments, 
+script, style
+[36m<h1[39m
+  [33mclass[39m=[32m"tex
+t-xl font-bold 
+text-slate-900 
+dark:text-white self-start 
+xs:self-auto"[39m
+[36m>[39m
+  [0mDashboard[0m
+[36m</h1>[39m
+
+(If this is intentional, 
+then use the `*AllBy*` 
+variant of the query (like 
+`queryAllByText`, 
+`getAllByText`, or 
+`findAllByText`)).
+
+Ignored nodes: comments, 
+script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          
+[33mclass[39m=[32m"flex 
+flex-col md:flex-row 
+bg-background-light 
+dark:bg-background-dark 
+text-slate-900 
+dark:text-slate-100 
+font-display 
+min-h-screen"[39m
+        [36m>[39m
+          [36m<aside[39m
+            [33mclass[39m
+=[32m"hidden md:flex w-20 
+lg:w-64 border-r 
+border-primary/10 
+bg-white/50 
+dark:bg-background-dark/50 
+flex-col h-screen sticky 
+top-0"[39m
+          [36m>[39m
+            [36m<div[39m
+              
+[33mclass[39m=[32m"p-6 
+flex items-center 
+gap-3"[39m
+            [36m>[39m
+              
+[36m<div[39m
+                
+[33mclass[39m=[32m"w-10 
+h-10 bg-primary rounded-lg 
+flex items-center 
+justify-center 
+text-white"[39m
+              [36m>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"material-icons
+-round"[39m
+                [36m>[39m
+                  
+[0mbolt[0m
+                
+[36m</span>[39m
+              
+[36m</div>[39m
+              
+[36m<span[39m
+                [33mclass
+[39m=[32m"hidden lg:block 
+font-bold text-xl 
+tracking-tight uppercase 
+italic"[39m
+              [36m>[39m
+                
+[0mFuel&Flow[0m
+              
+[36m</span>[39m
+            
+[36m</div>[39m
+            [36m<nav[39m
+              [33mclass[3
+9m=[32m"flex-1 px-4 
+space-y-2 mt-4"[39m
+            [36m>[39m
+              
+[36m<button[39m
+                [33mclass
+[39m=[32m"w-full flex 
+items-center gap-4 p-3 
+rounded-lg transition-all 
+relative bg-primary 
+text-white shadow-lg 
+shadow-primary/20"[39m
+              [36m>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"material-icons
+-round"[39m
+                [36m>[39m
+                  
+[0mdashboard[0m
+                
+[36m</span>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"hidden 
+lg:flex items-center gap-2 
+font-medium"[39m
+                [36m>[39m
+                  
+[0mDashboard[0m
+                
+[36m</span>[39m
+              
+[36m</button>[39m
+              
+[36m<button[39m
+                [33mclass
+[39m=[32m"w-full flex 
+items-center gap-4 p-3 
+rounded-lg transition-all 
+relative text-slate-500 
+dark:text-slate-400 
+hover:bg-primary/10 
+hover:text-primary"[39m
+              [36m>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"material-icons
+-round"[39m
+                [36m>[39m
+                  
+[0mrestaurant[0m
+                
+[36m</span>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"hidden 
+lg:flex items-center gap-2 
+font-medium"[39m
+                [36m>[39m
+                  
+[0mNutrition[0m
+                
+[36m</span>[39m
+              
+[36m</button>[39m
+              
+[36m<button[39m
+                [33mclass
+[39m=[32m"w-full flex 
+items-center gap-4 p-3 
+rounded-lg transition-all 
+relative text-slate-500 
+dark:text-slate-400 
+hover:bg-primary/10 
+hover:text-primary"[39m
+              [36m>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"material-icons
+-round"[39m
+                [36m>[39m
+                  
+[0minsights[0m
+                
+[36m</span>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"hidden 
+lg:flex items-center gap-2 
+font-medium"[39m
+                [36m>[39m
+                  
+[0mAnalytics[0m
+                
+[36m</span>[39m
+              
+[36m</button>[39m
+            
+[36m</nav>[39m
+            [36m<div[39m
+              
+[33mclass[39m=[32m"p-4 
+border-t 
+border-primary/10"[39m
+            [36m>[39m
+              
+[36m<button[39m
+                [33mclass
+[39m=[32m"w-full flex 
+items-center gap-4 p-3 
+rounded-lg text-slate-500 
+dark:text-slate-400 
+hover:bg-primary/10 
+hover:text-primary 
+transition-all"[39m
+              [36m>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"material-icons
+-round"[39m
+                [36m>[39m
+                  
+[0msettings[0m
+                
+[36m</span>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"hidden 
+lg:block font-medium"[39m
+                [36m>[39m
+                  
+[0mSettings[0m
+                
+[36m</span>[39m
+              
+[36m</button>[39m
+              
+[36m<div[39m
+                
+[33mclass[39m=[32m"mt-4 
+flex items-center gap-3 
+p-2"[39m
+              [36m>[39m
+                
+[36m<div[39m
+                  
+[33mclass[39m=[32m"w-10 
+h-10 rounded-full 
+bg-slate-200 
+overflow-hidden"[39m
+                [36m>[39m
+                  
+[36m<img[39m
+                    
+[33malt[39m=[32m"User 
+Avatar"[39m
+                    [33mcl
+ass[39m=[32m"w-full 
+h-full object-cover"[39m
+                    [33msr
+c[39m=[32m"https://lh3.go
+ogleusercontent.com/aida-pu
+blic/AB6AXuBYCKTG15lGtEJLOk
+3zEO7cgl5sEQ_uB3sEncpJrzGW-
+y8uEDw2_PeuOOhoUhNLEQfNsbqw
+KcYj9f06pwq6scd_yLZUqdg7hMU
+dSmWUHzYv2cOJqSloI76Uy1Q87T
+bc9Vgq1NHWFi052FgWDaI96eo0a
+s9QIfz8u9v_5tf9YBPmM3-EOnYr
+HeQmOHt95Ey1xZsfw719uJ-1j3z
+O9FD5NXS3aY8DWcuu5ZqoVkmm-2
+uJCUvo8Tip_4impgHASUmR_qn7O
+WU0uJ7Z1Q"[39m
+                  
+[36m/>[39m
+                
+[36m</div>[39m
+                
+[36m<div[39m
+                  [33mclas
+s[39m=[32m"hidden 
+lg:block overflow-hidden 
+text-left"[39m
+                [36m>[39m
+                  
+[36m<p[39m
+                    [33mcl
+ass[39m=[32m"text-sm 
+font-semibold 
+truncate"[39m
+                  
+[36m>[39m
+                    
+[0mtest@example.com[0m
+                  
+[36m</p>[39m
+                  
+[36m<p[39m
+                    [33mcl
+ass[39m=[32m"text-xs 
+text-slate-500 
+truncate"[39m
+                  
+[36m>[39m
+                    
+[0mUser[0m
+                  
+[36m</p>[39m
+                
+[36m</div>[39m
+              
+[36m</div>[39m
+            
+[36m</div>[39m
+          
+[36m</aside>[39m
+          [36m<nav[39m
+            [33mclass[39m
+=[32m"md:hidden fixed 
+bottom-0 left-0 w-full 
+bg-white dark:bg-slate-900 
+border-t border-slate-200 
+dark:border-slate-800 z-50 
+px-6 py-3 grid grid-cols-4 
+pb-safe 
+justify-items-center"[39m
+          [36m>[39m
+            
+[36m<button[39m
+              [33mclass[3
+9m=[32m"w-full flex 
+flex-col items-center 
+gap-1 transition-all 
+relative text-primary"[39m
+            [36m>[39m
+              
+[36m<div[39m
+                [33mclass
+[39m=[32m"p-1.5 
+rounded-xl transition-all 
+relative 
+bg-primary/10"[39m
+              [36m>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"material-icons
+-round text-2xl"[39m
+                [36m>[39m
+                  
+[0mdashboard[0m
+                
+[36m</span>[39m
+              
+[36m</div>[39m
+            
+[36m</button>[39m
+            
+[36m<button[39m
+              [33mclass[3
+9m=[32m"w-full flex 
+flex-col items-center 
+gap-1 transition-all 
+relative text-slate-400 
+hover:text-slate-600 dark:h
+over:text-slate-300"[39m
+            [36m>[39m
+              
+[36m<div[39m
+            ...
+[90m [2mΓ¥»[22m 
+Object.getElementError ../.
+./node_modules/.pnpm/@testi
+ng-library+dom@10.4.1/node_
+modules/@testing-library/do
+m/dist/config.js:[2m37:19
+[22m[39m
+[90m [2mΓ¥»[22m 
+getElementError ../../node_
+modules/.pnpm/@testing-libr
+ary+dom@10.4.1/node_modules
+/@testing-library/dom/dist/
+query-helpers.js:[2m20:35
+[22m[39m
+[90m [2mΓ¥»[22m getMulti
+pleElementsFoundError ../..
+/node_modules/.pnpm/@testin
+g-library+dom@10.4.1/node_m
+odules/@testing-library/dom
+/dist/query-helpers.js:[2m
+23:10[22m[39m
+[90m [2mΓ¥»[22m ../../no
+de_modules/.pnpm/@testing-l
+ibrary+dom@10.4.1/node_modu
+les/@testing-library/dom/di
+st/query-helpers.js:[2m55:
+13[22m[39m
+[90m [2mΓ¥»[22m ../../no
+de_modules/.pnpm/@testing-l
+ibrary+dom@10.4.1/node_modu
+les/@testing-library/dom/di
+st/query-helpers.js:[2m95:
+19[22m[39m
+[36m [2mΓ¥»[22m src/App.
+test.tsx:[2m33:19[22m[39
+m
+    [90m 31| [39m    [34
+mrender[39m([33m<[39m[3
+3mApp[39m [33m/[39m[33m
+>[39m)[33m;[39m
+    [90m 32| [39m    
+[90m// Check for a core 
+element that should always 
+be present on the d[39mΓÇª
+    [90m 33| [39m    [34
+mexpect[39m(screen[33m.[
+39m[34mgetByText[39m([36
+m/Dashboard/i[39m))[33m.
+[39m[34mtoBeInTheDocument
+[39m()[33m;[39m
+    [90m   | [39m        
+          [31m^[39m
+    [90m 34| [39m  
+})[33m;[39m
+    [90m 35| 
+[39m})[33m;[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+[1/1]ΓÄ»[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m24 passed[39m[22m[90m (25)[39m
+[2m   Start at [22m 13:48:37
+[2m   Duration [22m 5.85s[2m (transform 919ms, setup 1.76s, collect 6.90s, tests 1.92s, environment 10.51s, prepare 4.01s)[22m
+
+C:\Users\Reena\Documents\Projects\Fitness-App\pnpm-mono-repo-template\apps\web:
+ΓÇëERR_PNPM_RECURSIVE_RUN_FIRST_FAILΓÇë web@0.0.0 test: `vitest run`
+Exit status 1

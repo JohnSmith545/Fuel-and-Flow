@@ -1,0 +1,494 @@
+﻿
+> web@0.0.0 test C:\Users\Reena\Documents\Projects\Fitness-App\pnpm-mono-repo-template\apps\web
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/Reena/Documents/Projects/Fitness-App/pnpm-mono-repo-template/apps/web[39m
+
+ [32mΓ£ô[39m src/hooks/useUsers.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 40[2mms[22m[39m
+ [32mΓ£ô[39m src/components/ProfileSettings.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 363[2mms[22m[39m
+node.exe : [90mstderr[2m 
+| src/components/FoodLogger
+.test.tsx[2m > 
+[22m[2mFoodLogger 
+Component[2m > [22m[2mIn
+itialization[2m > 
+[22m[2mrenders search 
+bar and default sections
+At C:\Users\Reena\AppData\R
+oaming\npm\pnpm.ps1:24 
+char:5
++     & "node$exe"  "$based
+ir/node_modules/pnpm/bin/pn
+pm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([9  
+  0mstderr[2m...efault    
+ sections:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > [22m[2mIn
+itialization[2m > 
+[22m[2mloads and 
+displays custom meals from 
+firestore
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > [22m[2mIn
+itialization[2m > 
+[22m[2mhighlights 
+recommended foods based on 
+profile goal
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+ [32mΓ£ô[39m src/tests/LoggingFlow.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[90m 243[2mms[22m[39m
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mSearch 
+Functionality[2m > 
+[22m[2mfilters results 
+when typing
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+ [32mΓ£ô[39m src/components/DailyFuel.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[33m 452[2mms[22m[39m
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mSearch 
+Functionality[2m > 
+[22m[2mshows "No foods 
+found" for invalid search
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mInteractions[2m 
+> [22m[2mcalls onAddFood 
+when clicking a food item
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mInteractions[2m 
+> [22m[2mopens create 
+meal modal when clicking 
+"Create Custom Meal" 
+(Gold/Premium)
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mInteractions[2m 
+> [22m[2mshows premium 
+gate when clicking "Create 
+Custom Meal" as Free user
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+[90mstderr[2m | src/compo
+nents/FoodLogger.test.tsx[
+2m > [22m[2mFoodLogger 
+Component[2m > 
+[22m[2mInteractions[2m 
+> [22m[2msubmits a new 
+custom meal
+[22m[39mWarning: An 
+update to FoodLogger 
+inside a test was not 
+wrapped in act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+Warning: An update to 
+FoodLogger inside a test 
+was not wrapped in 
+act(...).
+
+When testing, code that 
+causes React state updates 
+should be wrapped into 
+act(...):
+
+act(() => {
+  /* fire events that 
+update state */
+});
+/* assert on the output */
+
+This ensures that you're 
+testing the behavior the 
+user would see in the 
+browser. Learn more at http
+s://reactjs.org/link/wrap-t
+ests-with-act
+    at FoodLogger (C:\Users
+\Reena\Documents\Projects\F
+itness-App\pnpm-mono-repo-t
+emplate\apps\web\src\compon
+ents\FoodLogger.tsx:26:23)
+
+ [32mΓ£ô[39m src/components/FoodLogger.test.tsx [2m([22m[2m9 tests[22m[2m)[22m[33m 662[2mms[22m[39m
+ [32mΓ£ô[39m src/App.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 166[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[32m25 passed[39m[22m[90m (25)[39m
+[2m   Start at [22m 13:49:10
+[2m   Duration [22m 5.80s[2m (transform 1.27s, setup 1.61s, collect 7.49s, tests 1.93s, environment 9.78s, prepare 3.92s)[22m
+

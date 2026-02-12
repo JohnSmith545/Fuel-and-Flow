@@ -1,0 +1,357 @@
+﻿
+> web@0.0.0 test:e2e C:\Users\Reena\Documents\Projects\Fitness-App\pnpm-mono-repo-template\apps\web
+> playwright test
+
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] ΓÇ║ e2e\happy-path.spec.ts:5:1 ΓÇ║ Happy Path: User Journey ΓÇ║ App loads and passes accessibility checks
+[1A[2K[chromium] ΓÇ║ e2e\happy-path.spec.ts:5:1 ΓÇ║ Happy Path: User Journey ΓÇ║ App loads and passes accessibility checks
+Accessibility Violations: [
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "tags": [
+      "cat.color",
+      "wcag2aa",
+      "wcag143",
+      "TTv5",
+      "TT13.c",
+      "EN-301-549",
+      "EN-9.1.4.3",
+      "ACT",
+      "RGAAv4",
+      "RGAA-3.2.1"
+    ],
+    "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#64748b",
+              "bgColor": "#0f172a",
+              "contrastRatio": 3.75,
+              "fontSize": "10.5pt (14px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"bg-background-light dark:bg-slate-900 w-full max-w-6xl flex flex-col md:flex-row rounded-[2rem] shadow-2xl overflow-hidden min-h-[700px]\">",
+                "target": [
+                  ".bg-background-light"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.75 (foreground color: #64748b, background color: #0f172a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<a class=\"text-slate-400 dark:text-slate-500 hover:text-primary dark:hover:text-primary transition-colors\" href=\"#\">Forgot Password?</a>",
+        "target": [
+          "a"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #64748b, background color: #0f172a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#64748b",
+              "bgColor": "#0f172a",
+              "contrastRatio": 3.75,
+              "fontSize": "10.5pt (14px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"bg-background-light dark:bg-slate-900 w-full max-w-6xl flex flex-col md:flex-row rounded-[2rem] shadow-2xl overflow-hidden min-h-[700px]\">",
+                "target": [
+                  ".bg-background-light"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.75 (foreground color: #64748b, background color: #0f172a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<p class=\"text-slate-500 dark:text-slate-500 text-sm\">Don't have an account? <button class=\"text-primary font-bold hover:underline\">Sign Up</button></p>",
+        "target": [
+          ".dark\\:text-slate-500.text-slate-500"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #64748b, background color: #0f172a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#0d33f2",
+              "bgColor": "#0f172a",
+              "contrastRatio": 2.35,
+              "fontSize": "10.5pt (14px)",
+              "fontWeight": "bold",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"bg-background-light dark:bg-slate-900 w-full max-w-6xl flex flex-col md:flex-row rounded-[2rem] shadow-2xl overflow-hidden min-h-[700px]\">",
+                "target": [
+                  ".bg-background-light"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.35 (foreground color: #0d33f2, background color: #0f172a, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<button class=\"text-primary font-bold hover:underline\">Sign Up</button>",
+        "target": [
+          ".hover\\:underline"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.35 (foreground color: #0d33f2, background color: #0f172a, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#64748b",
+              "bgColor": "#1e293b",
+              "contrastRatio": 3.07,
+              "fontSize": "7.5pt (10px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"absolute -top-4 -right-8 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-xl flex items-center gap-3 animate-bounce\" style=\"animation-duration: 3s;\">",
+                "target": [
+                  ".-top-4"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.07 (foreground color: #64748b, background color: #1e293b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<p class=\"text-[10px] text-slate-500\">2,400 kcal hit</p>",
+        "target": [
+          ".-top-4 > div:nth-child(2) > .text-\\[10px\\].text-slate-500"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.07 (foreground color: #64748b, background color: #1e293b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  }
+]
+
+[1A[2K  1) [chromium] ΓÇ║ e2e\happy-path.spec.ts:5:1 ΓÇ║ Happy Path: User Journey ΓÇ║ App loads and passes accessibility checks 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -   1[39m
+    [31m+ Received  + 163[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",[39m
+    [31m+     "help": "Elements must meet minimum color contrast ratio thresholds",[39m
+    [31m+     "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",[39m
+    [31m+     "id": "color-contrast",[39m
+    [31m+     "impact": "serious",[39m
+    [31m+     "nodes": Array [[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#0f172a",[39m
+    [31m+               "contrastRatio": 3.75,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#64748b",[39m
+    [31m+               "fontSize": "10.5pt (14px)",[39m
+    [31m+               "fontWeight": "normal",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.75 (foreground color: #64748b, background color: #0f172a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<div class=\"bg-background-light dark:bg-slate-900 w-full max-w-6xl flex flex-col md:flex-row rounded-[2rem] shadow-2xl overflow-hidden min-h-[700px]\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   ".bg-background-light",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.75 (foreground color: #64748b, background color: #0f172a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<a class=\"text-slate-400 dark:text-slate-500 hover:text-primary dark:hover:text-primary transition-colors\" href=\"#\">Forgot Password?</a>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "a",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#0f172a",[39m
+    [31m+               "contrastRatio": 3.75,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#64748b",[39m
+    [31m+               "fontSize": "10.5pt (14px)",[39m
+    [31m+               "fontWeight": "normal",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.75 (foreground color: #64748b, background color: #0f172a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<div class=\"bg-background-light dark:bg-slate-900 w-full max-w-6xl flex flex-col md:flex-row rounded-[2rem] shadow-2xl overflow-hidden min-h-[700px]\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   ".bg-background-light",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.75 (foreground color: #64748b, background color: #0f172a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<p class=\"text-slate-500 dark:text-slate-500 text-sm\">Don't have an account? <button class=\"text-primary font-bold hover:underline\">Sign Up</button></p>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           ".dark\\:text-slate-500.text-slate-500",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#0f172a",[39m
+    [31m+               "contrastRatio": 2.35,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#0d33f2",[39m
+    [31m+               "fontSize": "10.5pt (14px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 2.35 (foreground color: #0d33f2, background color: #0f172a, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<div class=\"bg-background-light dark:bg-slate-900 w-full max-w-6xl flex flex-col md:flex-row rounded-[2rem] shadow-2xl overflow-hidden min-h-[700px]\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   ".bg-background-light",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 2.35 (foreground color: #0d33f2, background color: #0f172a, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<button class=\"text-primary font-bold hover:underline\">Sign Up</button>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           ".hover\\:underline",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#1e293b",[39m
+    [31m+               "contrastRatio": 3.07,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#64748b",[39m
+    [31m+               "fontSize": "7.5pt (10px)",[39m
+    [31m+               "fontWeight": "normal",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.07 (foreground color: #64748b, background color: #1e293b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<div class=\"absolute -top-4 -right-8 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-xl flex items-center gap-3 animate-bounce\" style=\"animation-duration: 3s;\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   ".-top-4",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.07 (foreground color: #64748b, background color: #1e293b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<p class=\"text-[10px] text-slate-500\">2,400 kcal hit</p>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           ".-top-4 > div:nth-child(2) > .text-\\[10px\\].text-slate-500",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+     ],[39m
+    [31m+     "tags": Array [[39m
+    [31m+       "cat.color",[39m
+    [31m+       "wcag2aa",[39m
+    [31m+       "wcag143",[39m
+    [31m+       "TTv5",[39m
+    [31m+       "TT13.c",[39m
+    [31m+       "EN-301-549",[39m
+    [31m+       "EN-9.1.4.3",[39m
+    [31m+       "ACT",[39m
+    [31m+       "RGAAv4",[39m
+    [31m+       "RGAA-3.2.1",[39m
+    [31m+     ],[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+      23 |     
+      24 |     // Assert no critical violations
+    > 25 |     expect(accessibilityScanResults.violations).toEqual([]);
+         |                                                 ^
+      26 |   });
+      27 | });
+      28 |
+        at C:\Users\Reena\Documents\Projects\Fitness-App\pnpm-mono-repo-template\apps\web\e2e\happy-path.spec.ts:25:49
+
+    Error Context: test-results\happy-path-Happy-Path-User-7690c-passes-accessibility-checks-chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] ΓÇ║ e2e\happy-path.spec.ts:5:1 ΓÇ║ Happy Path: User Journey ΓÇ║ App loads and passes accessibility checks 
+
+[36m  Serving HTML report at http://localhost:58894. Press Ctrl+C to quit.[39m
