@@ -1,3 +1,4 @@
+// Tests the application's ability to detect and warn users about food allergen conflicts during the logging process.
 import { test, expect } from '@playwright/test';
 
 test.describe('Sad Path: Allergen Conflict', () => {

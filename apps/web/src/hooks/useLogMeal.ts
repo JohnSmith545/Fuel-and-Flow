@@ -4,9 +4,9 @@
 
 import { useAuth } from '../providers/AuthProvider';
 import { useUserProfile } from './useUserProfile';
-import { collection, addDoc, doc, deleteDoc, serverTimestamp, getDocs, query, where, Timestamp } from 'firebase/firestore';
+import { collection, addDoc, doc, deleteDoc, serverTimestamp, getDocs, query, where, Timestamp, orderBy, limit } from 'firebase/firestore';
 import { db } from '../lib/firebase';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { checkSafety as checkSafetyPure } from './checkSafety';
 export type { SafetyCheckResult } from './checkSafety';
 
@@ -45,7 +45,10 @@ export function useLogMeal() {
   const checkSafety = (food: FoodItem) => checkSafetyPure(food, profile?.allergens);
 
   const logMealMutation = useMutation({
-    mutationFn: async ({ food, overrideSafety = false }: { food: FoodItem, overrideSafety?: boolean }) => {
+    mutationFn: async ({ food, overrideSafety = false, date }: { food: FoodItem, overrideSafety?: boolean, date?: Date }) => {
+      const isToday = !date || date.toDateString() === new Date().toDateString();
+      const finalTimestamp = isToday ? serverTimestamp() : Timestamp.fromDate(date!);
+
       if (!user) throw new Error('No user');
 
       // Run Safety Check
@@ -57,27 +60,28 @@ export function useLogMeal() {
       // CHECK: Cannot log a new meal if previous meal doesn't have an energy level
       try {
         const mealsRef = collection(db, 'users', user.uid, 'meal_logs');
-        const mealsSnapshot = await getDocs(mealsRef);
+        const latestMealQuery = query(mealsRef, orderBy('loggedAt', 'desc'), limit(1));
+        const latestMealSnap = await getDocs(latestMealQuery);
         
-        const now = new Date();
-        const threeHoursAgo = new Date(now.getTime() - 3 * 60 * 60 * 1000);
-
-        // Find meals logged in the last 3 hours that don't have energy logs
-        for (const mealDoc of mealsSnapshot.docs) {
+        if (!latestMealSnap.empty) {
+          const mealDoc = latestMealSnap.docs[0];
           const meal = mealDoc.data();
           const mealTime = meal.loggedAt?.toDate();
           
+          const now = new Date();
+          const threeHoursAgo = new Date(now.getTime() - 3 * 60 * 60 * 1000);
+
+          // Only enforce if the meal was logged within the last 3 hours
           if (mealTime && mealTime > threeHoursAgo) {
-            // This meal is recent, check if it has an energy log
             const energyRef = collection(db, 'users', user.uid, 'energy_logs');
             const energyQuery = query(
               energyRef,
-              where('timestamp', '>', Timestamp.fromDate(mealTime))
+              where('timestamp', '>', Timestamp.fromDate(mealTime)),
+              limit(1)
             );
             const energySnapshot = await getDocs(energyQuery);
             
             if (energySnapshot.empty) {
-              // Found an unlogged meal
               throw new Error(`UNLOGGED_MEAL: Please log your energy level for your previous meal (${meal.name}) before logging a new meal.`);
             }
           }
@@ -97,7 +101,7 @@ export function useLogMeal() {
         protein: food.protein,
         carbs: food.carbs,
         fat: food.fat,
-        loggedAt: serverTimestamp(),
+        loggedAt: finalTimestamp,
         safetyOverride: overrideSafety, // Track if user overrode a warning
         image: food.image || null,
         isRecommended: food.isRecommended || false
@@ -105,7 +109,7 @@ export function useLogMeal() {
       return true;
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['dailyFuel'] }); // Invalidate if we switch DailyFuel to useQuery
+      queryClient.invalidateQueries({ queryKey: ['meals'] });
     }
   });
 
@@ -145,15 +149,46 @@ export function useLogMeal() {
       return true;
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['dailyFuel'] });
+      queryClient.invalidateQueries({ queryKey: ['meals'] });
     }
   });
 
   return { 
-    logMeal: (food: FoodItem, overrideSafety?: boolean) => logMealMutation.mutateAsync({ food, overrideSafety }), 
+    logMeal: (food: FoodItem, overrideSafety?: boolean, date?: Date) => logMealMutation.mutateAsync({ food, overrideSafety, date }), 
     deleteLog: deleteLogMutation.mutateAsync, 
     checkSafety, 
     loading: logMealMutation.isPending || deleteLogMutation.isPending, 
     error: (logMealMutation.error as Error)?.message || (deleteLogMutation.error as Error)?.message || null 
   };
+}
+
+export function useRecentMeals(date: Date) {
+  const { user } = useAuth();
+
+  return useQuery({
+    queryKey: ['meals', user?.uid, date.toDateString()],
+    queryFn: async () => {
+      if (!user) return [];
+
+      const startOfDay = new Date(date);
+      startOfDay.setHours(0, 0, 0, 0);
+      const endOfDay = new Date(date);
+      endOfDay.setHours(23, 59, 59, 999);
+
+      const logsRef = collection(db, 'users', user.uid, 'meal_logs');
+      const q = query(
+        logsRef,
+        where('loggedAt', '>=', Timestamp.fromDate(startOfDay)),
+        where('loggedAt', '<=', Timestamp.fromDate(endOfDay)),
+        orderBy('loggedAt', 'desc')
+      );
+
+      const querySnapshot = await getDocs(q);
+      return querySnapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      })) as LoggedMeal[];
+    },
+    enabled: !!user,
+  });
 }

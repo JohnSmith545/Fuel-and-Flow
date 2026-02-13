@@ -1,4 +1,4 @@
-
+// A custom hook that analyzes user nutrition and energy data to provide real-time dietary suggestions.
 import { useState, useEffect } from 'react';
 import { useAuth } from '../providers/AuthProvider';
 import { collection, query, orderBy, limit, getDocs, where, Timestamp } from 'firebase/firestore';

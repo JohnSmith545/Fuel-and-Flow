@@ -1,3 +1,4 @@
+// Executes end-to-end accessibility and load tests for the application's primary user journey.
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
@@ -10,7 +11,7 @@ test('App loads and passes accessibility checks', async ({ page }) => {
     // This is more resilient - we just want to verify the app loads
     await page.waitForLoadState('networkidle');
     
-    // 3. Accessibility Check (Level 4 Requirement)
+    // 3. Accessibility Check
     // This is the key requirement - automated a11y testing
     const accessibilityScanResults = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa']) // Test WCAG 2.0 Level A & AA

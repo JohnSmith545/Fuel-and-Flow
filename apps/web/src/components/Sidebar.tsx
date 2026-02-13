@@ -60,7 +60,7 @@ export function Sidebar({ onSettingsClick }: SidebarProps) {
                 to={item.to}
                 className="w-full flex items-center gap-4 p-3 rounded-lg transition-all relative text-slate-500 dark:text-slate-400 hover:bg-primary/10 hover:text-primary"
                 activeProps={{
-                  className: 'bg-primary text-white shadow-lg shadow-primary/20 hover:bg-primary hover:text-white',
+                  className: 'bg-primary text-white dark:text-white shadow-lg shadow-primary/20 hover:bg-primary hover:text-white',
                 }}
               >
                 <span className="material-icons-round">{item.icon}</span>
@@ -93,7 +93,7 @@ export function Sidebar({ onSettingsClick }: SidebarProps) {
             </div>
             <div className="hidden lg:block overflow-hidden text-left">
               <p className="text-sm font-semibold truncate">{profile?.displayName || user?.email}</p>
-              <p className="text-xs text-slate-500 truncate">{profile?.goal ? profile.goal.replace(/_/g, ' ') : 'User'}</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400 truncate">{profile?.goal ? profile.goal.replace(/_/g, ' ') : 'User'}</p>
             </div>
           </div>
         </div>

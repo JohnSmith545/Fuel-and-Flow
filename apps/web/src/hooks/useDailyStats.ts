@@ -113,7 +113,7 @@ export function useDailyStats() {
       });
 
       // Get meals
-      const mealsRef = collection(db, 'users', user.uid, 'meals');
+      const mealsRef = collection(db, 'users', user.uid, 'meal_logs');
       const mealsQuery = query(
         mealsRef,
         where('loggedAt', '>=', startOfDay),

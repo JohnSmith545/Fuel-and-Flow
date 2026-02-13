@@ -1,3 +1,4 @@
+// Unit tests for the checkSafety utility to ensure accurate detection of allergen conflicts in food items.
 import { describe, it, expect } from 'vitest';
 import { checkSafety } from './checkSafety';
 import type { FoodItem } from './useLogMeal';

@@ -163,7 +163,7 @@ export function HeroFocusStatus({ selectedDate }: { selectedDate: Date }) {
           {/* Focus Score */}
           <div className="glass dark:bg-white/5 border border-slate-200 dark:border-slate-800 p-2 md:p-4 rounded-lg flex flex-col items-center justify-center text-center">
             <span className="text-xl md:text-2xl font-black text-primary">{hasData ? focusScore : '—'}</span>
-            <span className="text-[9px] md:text-[10px] uppercase font-bold text-slate-500 leading-tight">Focus Score</span>
+            <span className="text-[9px] md:text-[10px] uppercase font-bold text-slate-500 dark:text-slate-300 leading-tight">Focus Score</span>
           </div>
 
           {/* Energy Average */}
@@ -171,7 +171,7 @@ export function HeroFocusStatus({ selectedDate }: { selectedDate: Date }) {
             <span className="text-xl md:text-2xl font-black text-primary">
               {hasData && yesterdayStats ? yesterdayStats.averageEnergyScore.toFixed(1) : '—'}
             </span>
-            <span className="text-[9px] md:text-[10px] uppercase font-bold text-slate-500 leading-tight">Avg Energy</span>
+            <span className="text-[9px] md:text-[10px] uppercase font-bold text-slate-500 dark:text-slate-300 leading-tight">Avg Energy</span>
           </div>
 
           {/* Metabolic Stability */}
@@ -179,7 +179,7 @@ export function HeroFocusStatus({ selectedDate }: { selectedDate: Date }) {
             <span className="text-xl md:text-2xl font-black text-primary">
               {hasData && yesterdayStats ? Math.round(yesterdayStats.metabolicStability) : '—'}%
             </span>
-            <span className="text-[9px] md:text-[10px] uppercase font-bold text-slate-500 leading-tight">Stability</span>
+            <span className="text-[9px] md:text-[10px] uppercase font-bold text-slate-500 dark:text-slate-300 leading-tight">Stability</span>
           </div>
         </div>
 

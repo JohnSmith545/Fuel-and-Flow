@@ -2,12 +2,10 @@
 // It is used to display the daily fuel of the user.
 // It is used in the App.tsx file.
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useAuth } from '../providers/AuthProvider';
 import { useUserProfile } from '../hooks/useUserProfile';
-import { collection, query, orderBy, onSnapshot, where, Timestamp } from 'firebase/firestore';
-import { db } from '../lib/firebase';
-import { LoggedMeal, useLogMeal } from '../hooks/useLogMeal';
+import { useLogMeal, useRecentMeals } from '../hooks/useLogMeal';
 import { ConfirmModal } from './ConfirmModal';
 import { MacroSummary } from './MacroSummary';
 
@@ -15,8 +13,7 @@ export function DailyFuel({ selectedDate }: { selectedDate: Date }) {
   const { user } = useAuth();
   const { profile } = useUserProfile();
   const { deleteLog } = useLogMeal();
-  const [meals, setMeals] = useState<LoggedMeal[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { data: meals = [], isLoading: loading } = useRecentMeals(selectedDate);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalConfig, setModalConfig] = useState<{
@@ -59,40 +56,6 @@ export function DailyFuel({ selectedDate }: { selectedDate: Date }) {
     setModalOpen(true);
   };
 
-  useEffect(() => {
-    if (!user) return;
-
-    setLoading(true);
-
-    // Create start and end of day timestamps
-    const startOfDay = new Date(selectedDate);
-    startOfDay.setHours(0, 0, 0, 0);
-    
-    const endOfDay = new Date(selectedDate);
-    endOfDay.setHours(23, 59, 59, 999);
-
-    const logsRef = collection(db, 'users', user.uid, 'meal_logs');
-    
-    // Query filtering by date range
-    const q = query(
-      logsRef, 
-      where('loggedAt', '>=', Timestamp.fromDate(startOfDay)),
-      where('loggedAt', '<=', Timestamp.fromDate(endOfDay)),
-      orderBy('loggedAt', 'desc')
-    );
-
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      const mealData = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      })) as LoggedMeal[];
-      setMeals(mealData);
-      setLoading(false);
-    });
-
-    return () => unsubscribe();
-  }, [user, selectedDate]);
-
   // Calculate Totals
   const totals = meals.reduce((acc, meal) => ({
     calories: acc.calories + meal.calories,
@@ -101,7 +64,7 @@ export function DailyFuel({ selectedDate }: { selectedDate: Date }) {
     fat: acc.fat + meal.fat,
   }), { calories: 0, protein: 0, carbs: 0, fat: 0 });
 
-  if (loading) return <div className="text-sm text-slate-500">Loading logs...</div>;
+  if (loading) return <div className="text-sm text-slate-500 dark:text-slate-400">Loading logs...</div>;
 
   return (
     <div className="space-y-8">

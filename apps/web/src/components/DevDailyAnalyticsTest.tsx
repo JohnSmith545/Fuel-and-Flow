@@ -74,7 +74,7 @@ export function DevDailyAnalyticsTest({ isOpen }: { isOpen: boolean }) {
     setLoading(true);
     setMessage('Creating test meal...');
     try {
-      const mealsRef = collection(db, 'users', user.uid, 'meals');
+      const mealsRef = collection(db, 'users', user.uid, 'meal_logs');
       await addDoc(mealsRef, {
         name: 'Test Meal - ' + new Date().toLocaleTimeString(),
         calories: Math.floor(Math.random() * 500) + 300,
@@ -129,7 +129,7 @@ export function DevDailyAnalyticsTest({ isOpen }: { isOpen: boolean }) {
       const [startOfDay, endOfDay] = getDateRange(yesterday);
 
       // Delete old meals for yesterday
-      const mealsRef = collection(db, 'users', user.uid, 'meals');
+      const mealsRef = collection(db, 'users', user.uid, 'meal_logs');
       const mealsQuery = query(
         mealsRef,
         where('loggedAt', '>=', startOfDay),
@@ -208,7 +208,7 @@ export function DevDailyAnalyticsTest({ isOpen }: { isOpen: boolean }) {
       const [startOfDay, endOfDay] = getDateRange(today);
 
       // Delete all meals for today
-      const mealsRef = collection(db, 'users', user.uid, 'meals');
+      const mealsRef = collection(db, 'users', user.uid, 'meal_logs');
       const mealsQuery = query(
         mealsRef,
         where('loggedAt', '>=', startOfDay),

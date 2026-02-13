@@ -62,7 +62,7 @@ export function DailyGoalCompletion() {
   return (
     <div className="glass p-4 md:p-6 rounded-xl flex flex-col justify-between bg-white/70 dark:bg-slate-900/50 border border-white/20 dark:border-slate-800">
       <div>
-        <h3 className="font-bold text-sm text-slate-500 uppercase tracking-widest mb-4">
+        <h3 className="font-bold text-sm text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-4">
           Daily Hydration Check
         </h3>
         <div className="flex items-center justify-center py-6">
@@ -72,7 +72,7 @@ export function DailyGoalCompletion() {
             <div className="text-sm text-slate-600 dark:text-slate-400 mb-1">
               of {recommendedGlasses} glasses
             </div>
-            <div className="text-xs text-slate-500 dark:text-slate-500 mb-6">
+            <div className="text-xs text-slate-500 dark:text-slate-400 mb-6">
               (8 oz per glass)
             </div>
             
@@ -101,7 +101,7 @@ export function DailyGoalCompletion() {
       <div className="space-y-3">
         <div className="flex justify-between items-center text-xs">
           <span className="font-semibold text-slate-700 dark:text-slate-300">Hydration Goal</span>
-          <span className={`font-bold ${progressPercentage >= 100 ? 'text-green-600' : 'text-blue-600'}`}>
+          <span className={`font-bold ${progressPercentage >= 100 ? 'text-green-600 dark:text-green-400' : 'text-blue-600 dark:text-blue-400'}`}>
             {Math.round(progressPercentage)}%
           </span>
         </div>

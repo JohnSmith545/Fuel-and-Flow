@@ -1,3 +1,4 @@
+// A component that displays a summary of the user's previous day analytics, including hydration, calories, and energy stability.
 import { useState, useEffect } from 'react';
 import { useDailyStats, DailyStats } from '../hooks/useDailyStats';
 
@@ -113,7 +114,7 @@ export function DailyAnalytics({ selectedDate }: { selectedDate: Date }) {
   if (loading) {
     return (
       <div className="glass p-6 rounded-xl bg-white/70 dark:bg-slate-900/50 border border-white/20 dark:border-slate-800">
-        <div className="text-sm text-slate-500">⏳ Loading yesterday's analytics...</div>
+        <div className="text-sm text-slate-500 dark:text-slate-400">⏳ Loading yesterday's analytics...</div>
       </div>
     );
   }
@@ -146,7 +147,7 @@ export function DailyAnalytics({ selectedDate }: { selectedDate: Date }) {
 
   return (
     <div className="glass p-6 rounded-xl bg-white/70 dark:bg-slate-900/50 border border-white/20 dark:border-slate-800">
-      <h3 className="font-bold text-sm text-slate-500 uppercase tracking-widest mb-6">
+      <h3 className="font-bold text-sm text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-6">
         Previous Day Analytics
       </h3>
 
@@ -155,13 +156,13 @@ export function DailyAnalytics({ selectedDate }: { selectedDate: Date }) {
         <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-900/10 rounded-lg p-3">
           <p className="text-xs text-slate-600 dark:text-slate-400 mb-1">Hydration</p>
           <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">{yesterdayStats.hydrationGlasses}</p>
-          <p className="text-xs text-slate-500">glasses</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400">glasses</p>
         </div>
 
         <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-900/10 rounded-lg p-3">
           <p className="text-xs text-slate-600 dark:text-slate-400 mb-1">Calories</p>
           <p className="text-2xl font-bold text-green-600 dark:text-green-400">{yesterdayStats.totalCalories}</p>
-          <p className="text-xs text-slate-500">kcal</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400">kcal</p>
         </div>
 
         <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-900/10 rounded-lg p-3">
@@ -169,7 +170,7 @@ export function DailyAnalytics({ selectedDate }: { selectedDate: Date }) {
           <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">
             {yesterdayStats.averageEnergyScore}/10
           </p>
-          <p className="text-xs text-slate-500">average</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400">average</p>
         </div>
 
         <div className="bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-900/10 rounded-lg p-3">
@@ -177,7 +178,7 @@ export function DailyAnalytics({ selectedDate }: { selectedDate: Date }) {
           <p className="text-2xl font-bold text-amber-600 dark:text-amber-400">
             {Math.round(yesterdayStats.metabolicStability)}%
           </p>
-          <p className="text-xs text-slate-500">metabolic</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400">metabolic</p>
         </div>
       </div>
 

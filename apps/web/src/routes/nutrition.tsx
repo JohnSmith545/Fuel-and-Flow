@@ -42,7 +42,7 @@ function Nutrition() {
 
     // 2. Attempt to log meal
     try {
-      const success = await logMeal(food, overrideSafety);
+      const success = await logMeal(food, overrideSafety, selectedDate);
       if (success) {
         setAlertModal({
             isOpen: true,
